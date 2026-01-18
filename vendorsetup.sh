@@ -1,3 +1,3 @@
 # TWRP lunch targets
-lunch twrp_air-eng
-lunch twrp_air-userdebug
+lunch twrp_air-ap1a-eng
+lunch twrp_air-ap1a-userdebug
