@@ -86,18 +86,9 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_SUPER_PARTITION_SIZE := 7516192768
 
 BOARD_SUPER_PARTITION_GROUPS := main
-BOARD_MAIN_SIZE := 7516192768
+BOARD_MAIN_SIZE := 7505707008
 
-BOARD_MAIN_PARTITION_LIST := \
-    system_a system_b \
-    system_ext_a system_ext_b \
-    product_a product_b \
-    vendor_a vendor_b \
-    odm_a odm_b \
-    mi_ext_a mi_ext_b \
-    system_dlkm_a system_dlkm_b \
-    vendor_dlkm_a vendor_dlkm_b \
-    odm_dlkm_a odm_dlkm_b
+BOARD_MAIN_PARTITION_LIST := odm odm_dlkm product system system_ext vendor  vendor_dlkm mi_ext system_dlkm
 
 # Dynamic ro partitions
 BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE := erofs
@@ -188,7 +179,7 @@ TW_INPUT_BLACKLIST := hbtp_vm
 TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1280
-TW_DEVICE_VERSION := Redmi_13c_5g
+TW_DEVICE_VERSION := by_dream-7x
 TW_EXCLUDE_APEX := true
 TW_INCLUDE_NTFS_3G := true
 TARGET_USES_MKE2FS := true
