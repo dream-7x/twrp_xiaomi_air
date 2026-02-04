@@ -1,6 +1,0 @@
-# Fstab
-ro.postinstall.fstab.prefix=/system
-
-# HideReflashTWRP
-ro.twrp.vendor_boot=true
-
