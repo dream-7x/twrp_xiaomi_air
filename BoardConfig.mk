@@ -100,9 +100,9 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 
 # Kernel Modules
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(shell cat device/xiaomi/air/modules/modules.load.android)
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(shell cat device/xiaomi/air/modules/modules.load)
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(shell cat device/xiaomi/air/modules/modules.load.recovery)
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(shell cat device/xiaomi/air/recovery/root/modules/modules.load.android)
+BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(shell cat device/xiaomi/air/recovery/root/modules/modules.load)
+BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(shell cat device/xiaomi/air/recovery/root/modules/modules.load.recovery)
 BOOT_KERNEL_MODULES := \
     $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD) \
     $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD)
