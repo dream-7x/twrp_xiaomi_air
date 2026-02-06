@@ -38,7 +38,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # API
-PRODUCT_SHIPPING_API_LEVEL := 33
+PRODUCT_SHIPPING_API_LEVEL := 32
 PRODUCT_TARGET_VNDK_VERSION := current
 
 # Enable Fuse Passthrough
@@ -107,6 +107,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-mtkimpl \
     android.hardware.boot@1.2-mtkimpl.recovery
+
+    PRODUCT_PACKAGES += \
+    bootctrl.mt6835 \
+    bootctrl.mt6835.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctrl
